@@ -277,9 +277,9 @@ Pre-built Docker images are available at Docker-Hub:
 [Python 3.5](https://hub.docker.com/r/apachebeam/python3.5_sdk),
 [Python 3.6](https://hub.docker.com/r/apachebeam/python3.6_sdk),
 [Python 3.7](https://hub.docker.com/r/apachebeam/python3.7_sdk).
-
-To run a pipeline on an embedded Flink cluster:
 </span>
+
+#### To run a pipeline on an embedded Flink cluster:
 
 <span class="language-py">1. Start the JobService endpoint: `./gradlew :runners:flink:1.9:job-server:runShadow`
 </span>
@@ -307,9 +307,7 @@ with beam.Pipeline(options) as p:
     ...
 ```
 
-<span class="language-py">
-To run on a separate [Flink cluster](https://ci.apache.org/projects/flink/flink-docs-release-1.8/tutorials/local_setup.html):
-</span>
+#### To run on a separate [Flink cluster](https://ci.apache.org/projects/flink/flink-docs-release-1.8/tutorials/local_setup.html):
 
 <span class="language-py">1. Start a Flink cluster which exposes the Rest interface on `localhost:8081` by default.
 </span>
